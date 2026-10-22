@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVA Studio | Presupuesto</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header>
+        <nav class="menu">
+            <a href="index.html" class="logo">NOVA Studio</a>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="presupuesto.html" class="activo">Presupuesto</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <p class="etiqueta">EMPECEMOS TU PROYECTO</p>
+            <h1>Solicita tu presupuesto.</h1>
+            <p>Cuéntanos qué necesitas y podremos estudiar tu proyecto.</p>
+        </section>
+
+        <section class="seccion">
+            <h2>Formulario de solicitud</h2>
+
+            <form class="formulario" action="#" method="get">
+
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre"
+                       required minlength="2" maxlength="60"
+                       autocomplete="name">
+
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email"
+                       required autocomplete="email">
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono"
+                       required pattern="[0-9 +()-]{9,20}"
+                       title="Introduce un teléfono válido"
+                       autocomplete="tel">
+
+                <label for="mensaje">Solicite más información</label>
+                <textarea id="mensaje" name="mensaje"
+                          rows="6" required minlength="10"
+                          maxlength="1000"></textarea>
+
+                <div class="privacidad">
+                    <input type="checkbox" id="privacidad"
+                           name="privacidad" required>
+                    <label for="privacidad">
+                        He leído y acepto la
+                        <a href="privacidad.html">Política de privacidad</a>.
+                    </label>
+                </div>
+
+                <button type="submit" class="boton">Enviar solicitud</button>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Síguenos: <a href="https://www.instagram.com/">Instagram</a> |
+        <a href="https://www.facebook.com/">Facebook</a></p>
+        <p>Oviedo, Asturias | info@novastudio.example</p>
+        <p><a href="aviso-legal.html">Aviso legal</a></p>
+        <p>© 2026 NOVA Studio. Proyecto educativo ficticio.</p>
+    </footer>
+
+</body>
+</html>
